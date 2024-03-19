@@ -1,21 +1,78 @@
 html {
-    font-size: 18px;
+    font-size: 12px;
     margin: 1rem;
     font-family: "Garamond", "Times New Roman", serif;
 }
 
 .gridQuote {
-    display: grid;
+    display: inline-grid;
     grid-auto-rows: auto;
-    grid-template-columns: 30rem repeat(1, 25rem);
-    grid-template-rows: 2rem;
     row-gap: 0px;
-    column-gap: 1rem;
-    justify-items: start;
-    align-items: end;
 }
 
-.show {
-    line-height: 2rem;
-    border: 1px dotted black;
+.blankrow { grid-column: span 1 / -1; }
+
+.cq1 { grid-template-columns: 30rem repeat(1, 25rem); }
+.cq2 { grid-template-columns: 30rem repeat(2, 25rem); }
+.cq3 { grid-template-columns: 30rem repeat(2, 25rem); }
+.cq4 { grid-template-columns: 30rem repeat(4, 25rem); }
+
+.bq1 { grid-template-columns: 12rem 20rem repeat(1, 25rem); }
+.bq2 { grid-template-columns: 10rem 20rem repeat(2, 25rem); }
+.bq3 { grid-template-columns: 10rem 20rem repeat(3, 25rem); }
+.bq4 { grid-template-columns: 10rem 20rem repeat(4, 25rem); }
+
+.sec {
+    align-items: center;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0.2rem 0.2rem;
+    display: flex;
+}
+
+.bAll { border: 1px solid black }
+.bTop { border-top: 1px solid black }
+
+
+.bencol {
+    padding: 0.2rem 0.2rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tBig { font-size: 1.8rem }
+.tMed { font-size: 1.33rem }
+.tNormal { font-size: 1rem;}
+.tSmall { font-size: 0.75rem }
+.tTiny { font-size: 0.5rem }
+.tBold { font-weight: bold }
+.tItal { font-style: italic }
+
+.gap {
+    margin-left: 1rem;
+    text-align: center;
+    border-left: 1px solid black;
+    font-style: italic;
+}
+
+.tCli    { grid-column: span 2 }
+.bgCli   { background-color: rgb(200,228,228) }
+.tcCli   { color: rgb(0,96,134) }
+
+.bgBasic { background-color: rgb(255,244,228) }
+.bgHosp  { background-color: rgb(221,235,247) }
+.bgOut   { background-color: rgb(221,235,247) }
+.bgExtra { background-color: rgb(204,236,255) }
+.bgDent  { background-color: rgb(238,238,238) }
+.bgTips  { background-color: rgb(249,246,237) }
+
+.wrapping-button {
+    padding: inherit;
+    border: inherit;
+    margin: inherit;
+    font: inherit;
+
+    cursor: pointer;
+    background-color: transparent;
 }
