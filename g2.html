@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quGrid</title>
+<style>
+
+html {
+    font-size: 18px;
+    margin: 1rem;
+    font-family: "Garamond", "Times New Roman", serif;
+}
+
+.gridQuote {
+    display: inline-grid;
+    grid-auto-rows: auto;
+    row-gap: 0px;
+}
+
+.blankrow { grid-column: span 1 / -1; }
+
+.cq1 { grid-template-columns: 30rem repeat(1, 25rem); }
+.cq2 { grid-template-columns: 30rem repeat(2, 25rem); }
+.cq3 { grid-template-columns: 30rem repeat(2, 25rem); }
+.cq4 { grid-template-columns: 30rem repeat(4, 25rem); }
+
+.bq1 { grid-template-columns: 12rem 20rem repeat(1, 25rem); }
+.bq2 { grid-template-columns: 10rem 20rem repeat(2, 25rem); }
+.bq3 { grid-template-columns: 10rem 20rem repeat(3, 25rem); }
+.bq4 { grid-template-columns: 10rem 20rem repeat(4, 25rem); }
+
+.flex { display: flex; }
+
+.sec {
+    align-items: center;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0.2rem 0.2rem;
+}
+
+.bAll { border: 1px solid black }
+.bTop { border-top: 1px solid black }
+
+
+.bencol {
+    padding: 0.2rem 0.2rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tBig { font-size: 2rem }
+.tMed { font-size: 1.33rem }
+.tSml { font-size: 0.75rem }
+.tTiny { font-size: 0.5rem }
+.tBold { font-weight: bold }
+.tItal { font-style: italic }
+
+.gap {
+    margin-left: 1rem;
+    text-align: center;
+    border-left: 1px solid black;
+    font-style: italic;
+}
+
+.tCli    { grid-column: span 2 }
+.bgCli   { background-color: rgb(200,228,228) }
+.tcCli   { color: rgb(0,96,134) }
+
+.bgBasic { background-color: rgb(255,244,228) }
+.bgHosp  { background-color: rgb(221,235,247) }
+.bgOut   { background-color: rgb(221,235,247) }
+.bgExtra { background-color: rgb(204,236,255) }
+.bgDent  { background-color: rgb(238,238,238) }
+.bgTips  { background-color: rgb(249,246,237) }
+
+</style>
+</head>
+<body>
+
+    <div class="gridQuote bq1">
+
+        <div class="bgBasic sec flex tBig bAll" style="grid-row: span 2">Basics</div>
+        <div class="bgBasic bencol bTop tMed">Amount of deductible</div>
+        <div class="bgBasic bencol bTop tMed gap">1.200 &euro;/year</div>
+        <div class="bgBasic bencol">No-claim bonus</div>
+        <div class="bgBasic bencol gap">240 &euro;/year possible</div>
+
+        <div class="blankrow tTiny">&nbsp;</div>
+
+        <div class="bgHosp sec flex tBig bAll" style="grid-row: span 3">Hospital Stay</div>
+        <div class="bgHosp bencol bTop">Status and comfort</div>
+        <div class="bgHosp bencol bTop gap">Private patient - more comfort</div>
+        <div class="bgHosp bencol">Medical treatments</div>
+        <div class="bgHosp bencol gap">Head Physician</div>
+        <div class="bgHosp bencol">Accommodation</div>
+        <div class="bgHosp bencol gap">2-bed Room</div>
+
+        <div class="blankrow tTiny">&nbsp;</div>
+
+        <div class="bgOut sec flex tBig bAll" style="grid-row: span 3">Outpatient</div>
+        <div class="bgOut bencol bTop">Doctors and medical specialists</div>
+        <div class="bgOut bencol bTop gap">100%, but specialist care requires a referral</div>
+        <div class="bgOut bencol">Prescribed medication</div>
+        <div class="bgOut bencol gap">80% (the co-pay is limited to 800 €/yr)</div>
+        <div class="bgOut bencol">Vision aids</div>
+        <div class="bgOut bencol gap">Up to 150 €, every two years</div>
+
+        <div class="blankrow tTiny">&nbsp;</div>
+
+        <div class="bgExtra sec flex tBig bAll" style="grid-row: span 2">Extras</div>
+        <div class="bgExtra bencol bTop">Natural & alternative medicine</div>
+        <div class="bgExtra bencol bTop gap">80% up to 1.000 €/year invoice amount</div>
+        <div class="bgExtra bencol">Childbirth</div>
+        <div class="bgExtra bencol gap">Cost-free coverage for the baby in the first year of life</div>
+
+        <div class="blankrow tTiny">&nbsp;</div>
+
+        <div class="bgDent sec flex tBig bAll" style="grid-row: span 2">Dental</div>
+        <div class="bgDent bencol bTop">Dental treatment and prophylaxis</div>
+        <div class="bgDent bencol bTop gap">100% (1 x cleaning/yr)</div>
+        <div class="bgDent bencol">Prosthetics (cost estimates)</div>
+        <div class="bgDent bencol gap">Cost plan mandatory if costs will exceed 2.500 €/yr</div>
+
+        <div class="blankrow tTiny">&nbsp;</div>
+
+        <div class="bgTips sec flex tBig bAll" style="grid-column: span 2; grid-row: span 3">Helpful Tips</div>
+        <div class="bgTips bencol bTop gap">Comprehensive, but only basic coverage</div>
+        <div class="bgTips bencol gap">Family doctor principle</div>
+        <div class="bgTips bencol gap">10% discount for non-smokers with good blood values/BMI</div>
+
+        <div class="blankrow tTiny">&nbsp;</div>
+
+        <div class="tCli tItal">Prices subject to increase in January each year. </div>
+    </div>
+
+</body>
