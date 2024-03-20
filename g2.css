@@ -1,26 +1,20 @@
 html {
     font-size: 12px;
-    margin: 1rem;
     font-family: "Garamond", "Times New Roman", serif;
-}
-
-.gridQuote {
-    display: inline-grid;
-    grid-auto-rows: auto;
-    row-gap: 0px;
+    margin: 1rem;
 }
 
 .blankrow { grid-column: span 1 / -1; }
 
-.cq1 { grid-template-columns: 30rem repeat(1, 25rem); }
-.cq2 { grid-template-columns: 30rem repeat(2, 25rem); }
-.cq3 { grid-template-columns: 30rem repeat(2, 25rem); }
-.cq4 { grid-template-columns: 30rem repeat(4, 25rem); }
+.cq1 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 30rem repeat(1, 25rem); }
+.cq2 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 30rem repeat(2, 25rem); }
+.cq3 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 30rem repeat(2, 25rem); }
+.cq4 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 30rem repeat(4, 25rem); }
 
-.bq1 { grid-template-columns: 12rem 20rem repeat(1, 25rem); }
-.bq2 { grid-template-columns: 10rem 20rem repeat(2, 25rem); }
-.bq3 { grid-template-columns: 10rem 20rem repeat(3, 25rem); }
-.bq4 { grid-template-columns: 10rem 20rem repeat(4, 25rem); }
+.bq1 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 10rem 20rem repeat(1, 25rem); }
+.bq2 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 10rem 20rem repeat(2, 25rem); }
+.bq3 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 10rem 20rem repeat(3, 25rem); }
+.bq4 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 10rem 20rem repeat(4, 25rem); }
 
 .sec {
     align-items: center;
