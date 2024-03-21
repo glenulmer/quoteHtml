@@ -16,6 +16,20 @@ html {
 .bq3 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 10rem 20rem repeat(3, 25rem); }
 .bq4 { display: inline-grid; grid-auto-rows: auto; row-gap: 0px; box-sizing: border-box; grid-template-columns: 10rem 20rem repeat(4, 25rem); }
 
+.klLogo {
+    max-width: 100%;
+    height: auto;
+    grid-row: span 2;
+}
+
+.providerLogo {
+    margin-left: 1rem;
+    align-self: end;
+    justify-self: center;
+}
+
+.toBottom { align-self: end }
+
 .sec {
     align-items: center;
     font-style: normal;
@@ -42,6 +56,15 @@ html {
 .tTiny { font-size: 0.5rem }
 .tBold { font-weight: bold }
 .tItal { font-style: italic }
+
+.tRight { text-align: right }
+.noBo { border: none }
+
+.tgap {
+    margin-left: 1rem;
+    text-align: center;
+    border-left: 1px solid black;
+}
 
 .gap {
     margin-left: 1rem;
