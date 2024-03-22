@@ -36,23 +36,8 @@ html {
 
 .toBottom { align-self: end }
 
-.bigbox {
-    border: 1px solid black;
-    border-right:0;
-    align-items: center;
-    font-style: normal;
-    text-align: left;
-    padding: 0.2rem 0.2rem;
-    display: flex;
-}
-
 .bTop { border-top: 1px solid black }
 .bRight { border-right: 1px solid black;}
-
-.bencol {
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-}
 
 .tBig { font-size: 1.8rem }
 .tMed { font-size: 1.33rem }
@@ -94,7 +79,7 @@ html {
 
 .blankrow { grid-column: span 1 / -1; }
 
-.cq1 { grid-template-columns: 30rem repeat(1, 25rem); }
+.cq1 { grid-template-columns: 30 rem repeat(1, 25rem); }
 .cq2 { grid-template-columns: 30rem repeat(2, 25rem); }
 .cq3 { grid-template-columns: 30rem repeat(2, 25rem); }
 .cq4 { grid-template-columns: 30rem repeat(4, 25rem); }
@@ -118,19 +103,47 @@ html {
 
 .toBottom { align-self: end }
 
-.bAll { border: 1px solid black }
+.bAll {
+    border: 1px solid black;
+    padding: 0.2rem;
+    align-items: center;
+    display: flex;
+}
+
 .bTop { border-top: 1px solid black }
+
+.blBox {
+    font-style: normal;
+    text-align: left;
+    padding: 0.2rem 0.2rem;
+    align-items: center;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.bencat {
+    padding: 0.2rem 0.2rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    width: 100%;
+    font: inherit;
+    align-items: center;
+    display: flex;
+}
 
 .bencol {
     padding: 0.2rem 0.2rem;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    text-align: center;
     border-left: 1px solid black;
-    font-style: italic;
     width: 100%;
     font: inherit;
+    align-self: center;
 }
+
 
 .ref {
     text-align: right;
@@ -158,6 +171,11 @@ html {
 
 .gap {
     margin-left: 1rem;
+    text-align: center;
+}
+
+.nrm {
+    margin-right: -0.5rem;
 }
 
 
