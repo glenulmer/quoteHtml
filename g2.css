@@ -30,6 +30,8 @@ html {
 
 .providerLogo {
     margin-left: 1rem;
+    max-width: 75%;
+    height: auto;
     align-self: end;
     justify-self: center;
 }
