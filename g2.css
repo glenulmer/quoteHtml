@@ -9,87 +9,20 @@ html {
 .quGr {
     display: inline-grid;
     grid-auto-rows: auto;
-    row-gap: 0px;
-}
-
-.cq1 { grid-template-columns: 30rem repeat(1, 25rem); }
-.cq2 { grid-template-columns: 30rem repeat(2, 25rem); }
-.cq3 { grid-template-columns: 30rem repeat(2, 25rem); }
-.cq4 { grid-template-columns: 30rem repeat(4, 25rem); }
-
-.bq1 { grid-template-columns: 10rem 20rem repeat(1, 25rem); }
-.bq2 { grid-template-columns: 10rem 20rem repeat(2, 25rem); }
-.bq3 { grid-template-columns: 10rem 20rem repeat(3, 25rem); }
-.bq4 { grid-template-columns: 10rem 20rem repeat(4, 25rem); }
-
-.klLogo {
-    max-width: 100%;
-    height: auto;
-    grid-row: span 2;
-}
-
-.providerLogo {
-    margin-left: 1rem;
-    max-width: 75%;
-    height: auto;
-    align-self: end;
-    justify-self: center;
-}
-
-.toBottom { align-self: end }
-
-.bTop { border-top: 1px solid black }
-.bRight { border-right: 1px solid black;}
-
-.tBig { font-size: 1.8rem }
-.tMed { font-size: 1.33rem }
-.tNormal { font-size: 1rem;}
-.tSmall { font-size: 0.75rem }
-.tTiny { font-size: 0.5rem }
-.tBold { font-weight: bold }
-.tItal { font-style: italic }
-
-.tRight { text-align: right }
-.noBo { border: none }
-
-.tgap {
-    margin-left: 1rem;
+    row-gap: 0;
+    column-gap: 0;
     text-align: center;
-    border-left: 1px solid black;
 }
 
-.tCli    { grid-column: span 2 }
-.bgCli   { background-color: rgb(200,228,228) }
-.tcCli   { color: rgb(0,96,134) }
+.clientq1 { grid-template-columns: 30rem repeat(1, 2rem 25rem); }
+.clientq2 { grid-template-columns: 30rem repeat(2, 2rem 25rem); }
+.clientq3 { grid-template-columns: 30rem repeat(3, 3rem 25rem); }
+.clientq4 { grid-template-columns: 30rem repeat(4, 3rem 25rem); }
 
-.tcRed { color: red }
-.tcBlue { color: blue }
-.tcGreen { color: darkgreen }
-
-.bgBasic { background-color: rgb(255,244,228) }
-.bgHosp  { background-color: rgb(221,235,247) }
-.bgOut   { background-color: rgb(221,235,247) }
-.bgExtra { background-color: rgb(204,236,255) }
-.bgDent  { background-color: rgb(238,238,238) }
-.bgTips  { background-color: rgb(249,246,237) }
-
-html {
-    font-size: 13px;
-    font-family: "Garamond", "Times New Roman", serif;
-    margin: 1rem;
-}
-
-.blankrow { grid-column: span 1 / -1; }
-
-.cq1 { grid-template-columns: 30 rem repeat(1, 25rem); }
-.cq2 { grid-template-columns: 30rem repeat(2, 25rem); }
-.cq3 { grid-template-columns: 30rem repeat(2, 25rem); }
-.cq4 { grid-template-columns: 30rem repeat(4, 25rem); }
-
-.bq1 { grid-template-columns: 10rem 20rem repeat(1, 25rem); }
-.bq2 { grid-template-columns: 10rem 20rem repeat(2, 25rem); }
-.bq3 { grid-template-columns: 10rem 20rem repeat(3, 25rem); }
-.bq4 { grid-template-columns: 10rem 20rem repeat(4, 25rem); }
+.benq1 { grid-template-columns: 10rem 20rem repeat(1, 2rem 25rem); }
+.benq2 { grid-template-columns: 10rem 20rem repeat(2, 2rem 25rem); }
+.benq3 { grid-template-columns: 10rem 20rem repeat(3, 2rem 25rem); }
+.benq4 { grid-template-columns: 10rem 20rem repeat(4, 2rem 25rem); }
 
 .klLogo {
     max-width: 100%;
@@ -98,16 +31,22 @@ html {
 }
 
 .providerLogo {
-    margin-left: 1rem;
     align-self: end;
+    width: 67%;
+    height: auto;
     justify-self: center;
+    margin-bottom: 0.5rem;
+}
+
+.widerhalf {
+    margin-right: -0.5rem;
 }
 
 .toBottom { align-self: end }
 
 .bAll {
     border: 1px solid black;
-    padding: 0.2rem;
+    padding-left: 0.5rem;
     align-items: center;
     display: flex;
 }
@@ -115,9 +54,8 @@ html {
 .bTop { border-top: 1px solid black }
 
 .blBox {
-    font-style: normal;
     text-align: left;
-    padding: 0.2rem 0.2rem;
+    padding-left: 0.5rem;
     align-items: center;
     display: flex;
     border-top: 1px solid black;
@@ -131,7 +69,6 @@ html {
     border-right: 1px solid black;
     border-left: 1px solid black;
     width: 100%;
-    font: inherit;
     align-items: center;
     display: flex;
 }
@@ -146,12 +83,16 @@ html {
     align-self: center;
 }
 
-
 .ref {
     text-align: right;
     font-style: italic;
     margin: 0.1rem;
     color: gray;
+}
+
+.clientDOB {
+    align-self: center;
+    margin-top:0.8rem;
 }
 
 .tBig { font-size: 1.8rem }
@@ -162,24 +103,8 @@ html {
 .tBold { font-weight: bold }
 .tItal { font-style: italic }
 
-.tRight { text-align: right }
+.tLeft { text-align: left }
 .noBo { border: none }
-
-.tgap {
-    margin-left: 1rem;
-    text-align: center;
-    border-left: 1px solid black;
-}
-
-.gap {
-    margin-left: 1rem;
-    text-align: center;
-}
-
-.nrm {
-    margin-right: -0.5rem;
-}
-
 
 .tCli    { grid-column: span 2 }
 .bgCli   { background-color: rgb(200,228,228) }
